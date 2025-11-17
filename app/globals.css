@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; height: 100%; background: radial-gradient(1200px 800px at 50% 20%, #0a0f1f 0%, #040712 60%, #01020a 100%); color: #e6f0ff; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+button { cursor: pointer; }
+.container { display: grid; grid-template-rows: auto 1fr auto; min-height: 100vh; }
+.header { padding: 20px 16px; display: flex; align-items: center; justify-content: center; gap: 12px; backdrop-filter: blur(6px); background: rgba(2,4,12,0.4); border-bottom: 1px solid rgba(255,255,255,0.08); }
+.title { font-weight: 700; letter-spacing: 0.3px; }
+.controls { display: flex; gap: 12px; align-items: center; justify-content: center; padding: 16px; flex-wrap: wrap; }
+.primary { background: #6ec1ff; color: #051022; border: none; padding: 10px 14px; border-radius: 10px; font-weight: 700; }
+.secondary { background: transparent; color: #a8c4ff; border: 1px solid rgba(255,255,255,0.18); padding: 10px 14px; border-radius: 10px; font-weight: 600; }
+.link { color: #9bd1ff; }
+.footer { padding: 14px; text-align: center; color: #8aa8e6; opacity: 0.9; }
+.canvasWrap { display: grid; place-items: center; padding: 18px; }
+.card { width: min(1280px, 95vw); aspect-ratio: 16 / 9; border-radius: 16px; border: 1px solid rgba(255,255,255,0.08); background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)); box-shadow: 0 10px 40px rgba(0,0,0,0.5); position: relative; overflow: hidden; }
+.badge { position: absolute; top: 12px; left: 12px; background: rgba(255,255,255,0.08); padding: 6px 10px; border-radius: 999px; font-size: 12px; letter-spacing: 0.4px; }
+.videoLink { color: #bfe3ff; font-weight: 600; text-decoration: none; border-bottom: 1px dashed rgba(191,227,255,0.6); }
+.note { font-size: 12px; color: #9fb8f2; opacity: 0.9; }
